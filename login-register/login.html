@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+ <html>
+ <head>
+ 	<title>Login/Register</title>
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+ 	<div class="hero">
+ 		<div class="form-box">
+ 			<div class="button-box">
+ 				<div id="btn">
+ 					
+ 				</div>
+ 				<button type="button" class="toggle-btn" onclick="login()">
+ 					Login
+ 				</button>
+ 				<button type="button" class="toggle-btn" onclick="register()">
+ 					Register
+ 				</button>
+ 			</div>
+ 			<div class="social-icons">
+ 			<a href= "https://www.instagram.com/teamplayzcoding/" target="_blank"><img src="css/pictures/instagram.jpg"></a>
+ 			<a href="https://twitter.com/teamplayzcoding" target="_blank"><img src="css/pictures/tw.jpg"></a>
+ 			<img src="css/pictures/fb.jpg">
+
+ 		</div>
+ 		<form id="login" class="input-group">
+ 			<input type="text" class="input-field" placeholder="UserName" required>
+ 			<input type="password" class="input-field" placeholder="Password" required>
+ 			<input type="checkbox" class="chech-box" required><span><strong>Remember Password</strong></span>
+ 			<button type="submit" class="submit-btn">Login</button>
+ 		</form>
+ 		<form id="register" class="input-group">
+ 			<input type="text" class="input-field" placeholder="UserName" required>
+ 			<input type="password" class="input-field" placeholder="Password" required>
+            <input type="text" class="input-field" placeholder="Repeat Password" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+ 			<input type="checkbox" class="chech-box" required><span><b>I agree to the terms & condilions</b></span>
+ 			<button type="submit" class="submit-btn">Register</button>
+ 		</form>
+ 		</div>
+        
+
+ 	</div>
+     <script>
+         
+ 		var x = document.getElementById("login");
+ 		var y = document.getElementById("register");
+ 		var z = document.getElementById("btn");
+        
+        function register(){
+            x.style.left= "-400px";
+            y.style.left= "50px";
+            z.style.left= "110px";
+        }
+         
+         function login(){
+            x.style.left= "50px";
+            y.style.left= "450px";
+            z.style.left= "0px";
+        }
+
+ 	</script>
+
+ </body>
+ </html>
+
